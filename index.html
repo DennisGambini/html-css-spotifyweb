@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e6654805a9.js" crossorigin="anonymous"></script>
+    <!-- / font awesome -->
+    <!-- google font -->
+
+    <!-- / google font -->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
@@ -12,10 +18,29 @@
         <!-- HEADER -->
         <header>
             <div class="logo">
-                logo
+                <img id="logo-small" class="logo" src="img/logo-small.svg" alt="">
+                <img id="logo" class="logo" src="img/logo.svg" alt="">
             </div>
-            <nav class="header-nav">home ecc</nav>
-            <div class="playlist">playlist</div>
+            <nav class="header-nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Cerca</li>
+                    <li>La tua libreria</li>
+                </ul>
+            </nav>
+            <div class="playlist">
+                <h3>Playlist</h3>
+                <button>Crea playlist</button>
+                <ul>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                    <li>Nome playlist</li>
+                </ul>
+            </div>
             <div class="profile">installa app</div>
         </header>
         <!-- fine HEADER -->
@@ -30,25 +55,44 @@
 
                 <!-- main-nav -->
                 <nav class="main-nav">
-                    main-nav
+                    <ul>
+                        <li>In evidenza</li>
+                        <li>Podcast</li>
+                        <li>Classifiche</li>
+                        <li>Generi e mood</li>
+                        <li>Nuove uscite</li>
+                        <li>Scopri</li>
+                    </ul>
                 </nav>
 
                 <!-- section one -->
                 <section class="main-section section-one">
-                    <h1>Recently played</h1>
+                    <h2>Recently played</h2>
+                    <div class="card">
+                        <div class="card-img" id="card-1">
+                            <img src="img/metal_lifting.jpg" alt="">
+                            <div class="img-play">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <h4 class="card-title">Heavy metal</h4>
+                            <p class="card-artist">Subtitle</p>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- section two -->
                 <section class="main-section section-two">
-                    <h1>Creato per John Doe</h1>
+                    <h2>Creato per John Doe</h2>
                 </section>
 
                 <!-- section three -->
                 <section class="main-section section-three">
-                    <h1>Artisti pi&ugrave; popolari</h1>
+                    <h2>Artisti pi&ugrave; popolari</h2>
                 </section>
 
-                
+
                 <section class="main-section section-three">
                     <h1>Artisti pi&ugrave; popolari</h1>
                 </section>
