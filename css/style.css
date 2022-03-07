@@ -1,5 +1,73 @@
+/* GENERALI */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.wrapper{
+    height: calc(100vh - 100px);
+    display: flex;
+}
+/* / fine GENERALI */
+
+
+/* HEADER */
+header{
+    flex-basis: 200px;
+    background-color: red;
+}
+/* / fine HEADER */
+
+
+/* MAIN */
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.top-alert{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: #080B12;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.main-content{
+    background-color: #141922;
+    background-color: green;
+    margin-top: 100px;
+}
+.main-nav{
+    background-color: thistle;
+}
+.section-three{
+    height: 350px;/* POI TOGLILO */
+}
+/* / fine MAIN */
+
+
+/* FOOTER */
+footer{
+    height: 100px;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-cover{
+    background-color: blueviolet;
+}
+.player{
+    background-color: darkgreen;
+}
+.footer-controller{
+    background-color: orangered;
+}   
