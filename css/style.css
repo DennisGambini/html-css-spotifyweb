@@ -9,10 +9,15 @@ body{
     width: 100%;
     background-color: black;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 .wrapper{
     height: calc(100vh - 100px);
     display: flex;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 /* / fine GENERALI */
 
@@ -37,14 +42,13 @@ main{
     position: fixed;
     height: 100px;
     width: 100%;
-    background-color: #080B12;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(20, 25, 34, 0.7);
     z-index: 2;
 }
 .main-content{
     background-color: #141922;
-    background-color: green;
     margin-top: 100px;
+    padding: 20px;
 }
     /* main nav */
 .main-nav{
@@ -55,20 +59,29 @@ main{
     flex-flow: row wrap;
     justify-content: center;
     gap: 40px;
+    list-style: none;
 }
-.main-nav>ul>li{    
+.main-nav>ul>li>a{    
     display: block;
     padding: 20px;
     border: 1px solid black;
+    cursor: pointer;
 }
     /* / fine main nav */
 
     /* main sections */
-
+.main-content>section{
+    margin-top: 20px;
+}
+.card-wrapper{
+    display: flex;
+    column-gap: 20px;
+    flex-flow: row wrap;
+}
 .card{
+    margin-top: 20px;
     text-align: center;
-    width: calc(100% / 6);
-    border: 2px solid black;
+    width: calc((100% / 6) - 20px);
 }
 .card-img{
     position: relative;
@@ -97,11 +110,7 @@ main{
 .card-img:hover .img-play{
     display: block;
 }
-/* .card-img{
-    height: 20vw;
-    width: 20vw;
-    background-color: lightblue;
-} */
+
 .section-three{
     height: 350px;/* POI TOGLILO */
 }

@@ -8,7 +8,9 @@
     <script src="https://kit.fontawesome.com/e6654805a9.js" crossorigin="anonymous"></script>
     <!-- / font awesome -->
     <!-- google font -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- / google font -->
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
@@ -56,28 +58,90 @@
                 <!-- main-nav -->
                 <nav class="main-nav">
                     <ul>
-                        <li>In evidenza</li>
-                        <li>Podcast</li>
-                        <li>Classifiche</li>
-                        <li>Generi e mood</li>
-                        <li>Nuove uscite</li>
-                        <li>Scopri</li>
+                        <li><a href="#">In evidenza</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Classifiche</a></li>
+                        <li><a href="#">Generi e mood</a></li>
+                        <li><a href="#">Nuove uscite</a></li>
+                        <li><a href="#">Scopri</a></li>
                     </ul>
                 </nav>
 
                 <!-- section one -->
                 <section class="main-section section-one">
                     <h2>Recently played</h2>
-                    <div class="card">
-                        <div class="card-img" id="card-1">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <div class="img-play">
-                                <i class="fa-regular fa-circle-play"></i>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/metal_lifting.jpg" alt="metal image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Heavy metal</h4>
+                                <p class="card-artist">Subtitle</p>
                             </div>
                         </div>
-                        <div class="card-description">
-                            <h4 class="card-title">Heavy metal</h4>
-                            <p class="card-artist">Subtitle</p>
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/stranger.jpeg" alt="stranger things image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Stranger Thing, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+                                <p class="card-artist">Kyle Dixon & Michael Stein</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/aquietplace.jpeg" alt="a quiet place image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">A quiet place</h4>
+                                <p class="card-artist">Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/split.jpeg" alt="split image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Split</h4>
+                                <p class="card-artist">Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/cure.jpeg" alt="cure image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">A cure for wellness</h4>
+                                <p class="card-artist">Subtitle</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/sinister.jpeg" alt="sinister image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Sinister</h4>
+                                <p class="card-artist">Subtitle</p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -85,25 +149,61 @@
                 <!-- section two -->
                 <section class="main-section section-two">
                     <h2>Creato per John Doe</h2>
+                    <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</p>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/radar.jpeg" alt="metal image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Release Radar</h4>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/mixdaily.jpeg" alt="metal image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Daily Mix 1</h4>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <!-- section three -->
                 <section class="main-section section-three">
                     <h2>Artisti pi&ugrave; popolari</h2>
-                </section>
-
-
-                <section class="main-section section-three">
-                    <h1>Artisti pi&ugrave; popolari</h1>
-                </section>
-                <section class="main-section section-three">
-                    <h1>Artisti pi&ugrave; popolari</h1>
-                </section>
-                <section class="main-section section-three">
-                    <h1>Artisti pi&ugrave; popolari</h1>
-                </section>
-                <section class="main-section section-three">
-                    <h1>Artisti pi&ugrave; popolari</h1>
+                    <p>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti</p>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/youg.jpeg" alt="metal image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Lana del Rey</h4>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img" id="card-1">
+                                <img src="img/einaudi.jpeg" alt="metal image">
+                                <div class="img-play">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </div>
+                            <div class="card-description">
+                                <h4 class="card-title">Ludovico Einaudi</h4>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
