@@ -50,7 +50,11 @@
         <!-- MAIN -->
         <main>
             <!-- alert -->
-            <div class="top-alert">alert</div>
+            <div class="top-alert">
+                <button>
+                    <a href="#">Effettua l'upgrade</a>
+                </button>
+            </div>
 
             <!-- main-content -->
             <div class="main-content">
@@ -212,9 +216,37 @@
 
     <!-- FOOTER -->
     <footer>
-        <section class="footer-section footer-cover">cover</section>
-        <section class="footer-section player">player</section>
-        <section class="footer-section footer-controller">controller</section>
+        <section class="footer-section footer-cover">
+            <div id="song-cover">
+                <img src="img/sinister.jpeg" alt="sinister album cover">
+                <div id="song-cover-text">
+                    <h4>Sinister</h4>
+                    <p>Brano Nome</p>
+                </div>
+            </div>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+        </section>
+        <section class="footer-section player">
+            <div class="player-icons">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="song-range">
+                <span>0:25</span>
+                <input type="range" name="" id="">
+                <span>4:35</span>
+            </div>
+        </section>
+        <section class="footer-section footer-controller">
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" name="" id="">
+        </section>
     </footer>
     <!-- fine FOOTER -->
 </body>

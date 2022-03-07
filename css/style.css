@@ -24,6 +24,7 @@ a{
 
 /* HEADER */
 header{
+    flex-shrink: 0;
     flex-basis: 200px;
     background-color: red;
 }
@@ -38,13 +39,37 @@ main{
     flex-grow: 1;
     overflow-y: auto;
 }
+/* alert */
 .top-alert{
     position: fixed;
+    top: 0;
+    right: 0;
     height: 100px;
-    width: 100%;
+    width:calc(100% - 200px);
     background-color: rgba(20, 25, 34, 0.7);
     z-index: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+.top-alert>button{
+    background-color: rgba(20, 25, 34, 0.3);
+    border: 1px solid white;
+    border-radius: 25px;
+    margin-right: 40px;
+}
+.top-alert>button>a{
+    display: block;
+    padding: 10px 40px;
+    color: white;
+    text-transform: uppercase;
+}
+.top-alert>button:hover{
+    background-color: rgba(20, 25, 34, 1);
+}
+/* / fine alert */
+
+
 .main-content{
     background-color: #141922;
     margin-top: 100px;
@@ -52,7 +77,7 @@ main{
 }
     /* main nav */
 .main-nav{
-    background-color: thistle;
+    /* background-color: thistle; */
 }
 .main-nav>ul{
     display: flex;
@@ -111,9 +136,6 @@ main{
     display: block;
 }
 
-.section-three{
-    height: 350px;/* POI TOGLILO */
-}
     /* / fine main sections */
 /* / fine MAIN */
 
@@ -126,15 +148,37 @@ footer{
     bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .footer-cover{
     background-color: blueviolet;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+#song-cover{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#song-cover img{
+    height: 60px;
 }
 .player{
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
     background-color: darkgreen;
 }
 .footer-controller{
     background-color: orangered;
-}   
+    display: flex;
+    gap: 15px;
+}
