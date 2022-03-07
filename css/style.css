@@ -10,10 +10,14 @@ body{
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
 }
 .wrapper{
     height: calc(100vh - 100px);
     display: flex;
+}
+ul{
+    list-style: none;
 }
 a{
     text-decoration: none;
@@ -25,12 +29,74 @@ a{
 /* HEADER */
 header{
     flex-shrink: 0;
-    flex-basis: 200px;
-    background-color: red;
+    flex-basis: 235px;
+    display: flex;
+    flex-flow: column;
+}
+.logo{
+    margin-top: 10px;
 }
 #logo-small{
     display: none;
 }
+header>nav, header>div{
+    padding: 0 20px;
+}
+.header-nav svg{
+    height: 30px;
+    vertical-align: middle;
+}
+.playlist{
+    overflow-y: auto;
+    flex-grow: 1;
+}
+header li{
+    margin-top: 10px;
+}
+.create-playlist{
+    margin-top: 10px;
+}
+.create-playlist>h3{
+    margin-bottom: 10px;
+}
+.create-playlist>span{
+    font-size: 1.2em;
+}
+.add-button{
+    height: 30px;
+    width: 30px;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+
+/* install-profile */
+.install{
+    margin-bottom: 10px;
+}
+.install>svg{
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.header-bottom>hr{
+    margin-bottom: 10px;
+}
+.profile{
+    margin-bottom: 10px;
+}
+.profile-logo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
 /* / fine HEADER */
 
 
@@ -45,7 +111,7 @@ main{
     top: 0;
     right: 0;
     height: 100px;
-    width:calc(100% - 200px);
+    width:calc(100% - 235px);
     background-color: rgba(20, 25, 34, 0.7);
     z-index: 2;
     display: flex;
@@ -76,35 +142,51 @@ main{
     padding: 20px;
 }
     /* main nav */
-.main-nav{
-    /* background-color: thistle; */
-}
+
 .main-nav>ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 40px;
-    list-style: none;
+    gap: 20px;
 }
 .main-nav>ul>li>a{    
     display: block;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 5px;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: grey;
+}
+.hover-border{
+    width: 30%;
+    margin: 0 auto;
+    border-bottom: 2px solid yellowgreen;
+    visibility: hidden;
+}
+
+.main-nav>ul>li:hover .hover-border{
+    visibility: visible;
 }
     /* / fine main nav */
 
     /* main sections */
+main p{
+    color: gray;
+    margin-top: 10px;
+}
+main h3{
+    margin-top: 15px;
+}
 .main-content>section{
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .card-wrapper{
     display: flex;
     column-gap: 20px;
     flex-flow: row wrap;
+    margin-top: 30px;
 }
 .card{
-    margin-top: 20px;
     text-align: center;
     width: calc((100% / 6) - 20px);
 }
