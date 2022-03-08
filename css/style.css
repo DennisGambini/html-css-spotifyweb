@@ -197,13 +197,13 @@ main{
     margin-top: 100px;
     padding: 20px;
 }
-    /* main nav */
+    /* MAIN NAV */
 
 .main-nav>ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 .main-nav>ul>li>a{    
     display: block;
@@ -224,7 +224,7 @@ main{
 }
     /* / fine main nav */
 
-    /* main sections */
+    /* MAIN SECTIONS */
 main p{
     color: gray;
     margin-top: 10px;
@@ -291,15 +291,16 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
+/* SX */
 .footer-cover{
-    /* background-color: blueviolet; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 0;
-    padding: 20px;
-    gap: 10px;
+    margin-left: 20px;
+    gap: 20px;
 }
 .footer-cover i{
     margin-right: 10px;
@@ -313,7 +314,6 @@ footer{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-right: 30px;
 }
 #song-cover p{
     color: gray;
@@ -321,6 +321,7 @@ footer{
 #song-cover img{
     height: 60px;
 }
+/* CENTER */
 .player{
     flex-grow: 1;
     display: flex;
@@ -328,7 +329,19 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 15px;
-    /* background-color: darkgreen; */
+}
+.player-icons{
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.song-range{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .player-icons i{
     vertical-align: middle;
@@ -342,42 +355,46 @@ footer i:hover{
 .player .fa-circle-play{
     font-size: 2.5em;
 }
-.song-range input{
-   width: 400px;
+#song-bar{
+   flex-grow: 1;
    vertical-align: middle;
 }
-
-/* RANGE BARS */
-
-input[type='range']{
-    -webkit-appearance: none;
-    overflow: hidden;
-    height: 4px;
-    border-radius: 3px;
-    cursor: pointer;
-    background-color: gray;
-}
-  
-input[type='range']::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 15px;
-    height: 20px;
-    background: lightgray;
-    cursor: pointer;
-    box-shadow: -800px 0 0 800px lightgray;
-} 
-input[type='range']:hover::-webkit-slider-thumb{
-    background: darkgreen;
-    box-shadow: -800px 0 0 800px yellowgreen;
-}
-
-/* / fine RANGE BARS */
-
+/* DX */
 .footer-controller{
-    padding: 20px;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 0;
     gap: 15px;
 }
+
+
+
+
+
+    /* RANGE BARS */
+    
+    input[type='range']{
+        -webkit-appearance: none;
+        overflow: hidden;
+        height: 4px;
+        border-radius: 3px;
+        cursor: pointer;
+        background-color: gray;
+    }
+      
+    input[type='range']::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        width: 15px;
+        height: 20px;
+        background: lightgray;
+        cursor: pointer;
+        box-shadow: -800px 0 0 800px lightgray;
+    } 
+    input[type='range']:hover::-webkit-slider-thumb{
+        background: darkgreen;
+        box-shadow: -800px 0 0 800px yellowgreen;
+    }
+    
+    /* / fine RANGE BARS */

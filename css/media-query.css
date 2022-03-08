@@ -1,0 +1,82 @@
+/* M */
+@media screen and (max-width: 992px) {
+    body{
+        background-color: red;
+    }
+    .card{
+        width: calc((100% / 4) - 20px);
+    }
+    .song-range{
+        width: 100%;
+    }
+}
+/* S */
+@media screen and (max-width: 768px) {
+    body{
+        background-color: green;
+    }
+    .card{
+        width: calc((100% / 2) - 20px);
+    }
+    
+}
+/* XS */
+@media screen and (max-width: 576px) {
+    body{
+        background-color: black;
+    }
+    header{
+        background-color: black;
+        flex-basis: auto;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 90000;
+    }
+    .top-alert{
+        width: 100%;
+    }
+    header ul li{
+        padding-left: 0;
+    }
+    header ul li:hover{
+        border: none;
+        padding: 0;
+    }
+    .logo{
+        height: auto;
+    }
+    header span, .playlist, .create-playlist, header hr, #logo{
+        display: none;
+    }
+    #logo-small{
+        display: block;
+        height: 30px;
+    }
+    .install{
+        text-align: center;
+    }
+    .install>svg{
+        margin: 0;
+    }
+    .header-nav{
+        flex-grow: 1;
+    }
+    .header-bottom {
+        padding: 0;
+    }
+    .profile{
+        text-align: center;
+    }
+    .profile-logo{
+        margin-left: 10px;
+    }
+}
+/* XXS */
+@media screen and (max-width: 380px) {
+    body{
+        background-color: green;
+    }
+    .card{
+        width: calc(100% - 20px);
+    }
+}
