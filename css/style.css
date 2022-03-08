@@ -33,6 +33,7 @@ header{
     flex-basis: 235px;
     display: flex;
     flex-flow: column;
+    background-color: black;
 }
 .logo{
     height: 90px;
@@ -165,7 +166,7 @@ main{
     height: 100px;
     width:calc(100% - 235px);
     background-color: rgba(20, 25, 34, 0.7);
-    z-index: 2;
+    z-index: 10;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -319,7 +320,15 @@ footer{
     color: gray;
 }
 #song-cover img{
+    cursor: poiner;
     height: 60px;
+    transition: 0.5s;
+}
+#song-cover img:hover{
+    height: 400px;
+}
+#song-cover-text{
+    cursor:pointer;
 }
 /* CENTER */
 .player{
@@ -335,18 +344,18 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .song-range{
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
 }
 .player-icons i{
     vertical-align: middle;
     font-size: 1.5em;
-    margin: 0 10px;
 }
 footer i:hover{
     cursor: pointer;
@@ -367,6 +376,10 @@ footer i:hover{
     align-items: center;
     flex-grow: 0;
     gap: 15px;
+}
+#volume-bar{
+    width: 100%;
+    min-width: 40px;
 }
 
 
