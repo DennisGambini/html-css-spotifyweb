@@ -462,3 +462,136 @@ footer i:hover{
     }
     
     /* / fine RANGE BARS */
+    
+    
+
+    /* BONUSSSSSSSSSSSSSSS */
+
+            /* icone play nelle card */
+    .new-play-icon{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #1FDF64;
+        position: absolute;
+        bottom: 16px;
+        right: 10px;
+        opacity: 0;
+        transition: 0.2s;
+        font-size: 1.4em;
+        color: black;
+    }
+    .section-three .new-play-icon{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .new-play-icon i{
+        position: absolute;
+        top: 50%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+    .card:hover{
+        background-color: rgb(40, 45, 54);
+    }
+    .card-img{
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .card:hover .new-play-icon{
+        bottom: 20px;
+        opacity: 1;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+    }
+    .card{
+        border-radius: 8px;
+        background-color: rgb(30, 35, 44);
+        padding: 10px 10px 30px 10px;
+        cursor: pointer;
+    }
+
+
+        /* animazione colonnine del play */
+
+.colonne-box{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #1FDF64;
+    position: relative;
+}
+.colonne-square{
+    height: 24px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+.colonna{
+    width: calc((100% - 6px) / 4);
+    background-color: black;
+}
+.colonne-box:hover .colonna1{
+    animation: colonna1 0.5s linear infinite alternate;
+    animation-fill-mode: both;
+}
+.colonne-box:hover .colonna2{
+    animation: colonna2 0.7s linear infinite alternate;
+    animation-fill-mode: both;
+}
+.colonne-box:hover .colonna3{
+    animation: colonna3 0.5s linear infinite alternate;
+    animation-fill-mode: both;
+}
+.colonne-box:hover .colonna4{
+    animation: colonna4 0.4s linear infinite alternate;
+    animation-fill-mode: both;
+}
+.colonna1{
+    height: 100%;
+}
+@keyframes colonna1 {
+    from{
+        height: 100%;
+    }
+    to{
+        height: 0%;
+    }
+}
+.colonna2{
+    height: 40%;
+}
+@keyframes colonna2 {
+    from{
+        height: 40%;
+    }
+    to{
+        height: 100%;
+    }
+}
+.colonna3{
+    height: 60%;
+}
+@keyframes colonna3 {
+    from{
+        height: 60%;
+    }
+    to{
+        height: 0%;
+    }
+}
+.colonna4{
+    height: 20%;
+}
+@keyframes colonna4 {
+    from{
+        height: 20%;
+    }
+    to{
+        height: 100%;
+    }
+}
