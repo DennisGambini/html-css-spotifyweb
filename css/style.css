@@ -167,28 +167,43 @@ main{
     width:calc(100% - 235px);
     background-color: rgba(20, 25, 34, 0.7);
     z-index: 10;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 .top-alert>button{
     background-color: rgba(20, 25, 34, 0.3);
     border: 1px solid white;
     border-radius: 25px;
-    margin-right: 40px;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.1s;
 }
 .top-alert>button>a{
     display: block;
-    padding: 10px 40px;
     color: white;
     text-transform: uppercase;
     font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: 0.1s;
 }
 .top-alert>button:hover{
     background-color: rgba(20, 25, 34, 1);
+    right: 30px;
+    height: 54px;
+    width: 204px;
+    right: 38px;
+    border-radius: 27px;
 }
-.top-alert>button>a:hover{
+.top-alert>button:hover>a{
     color: yellowgreen;
+    font-size: 1.05em;
 }
 /* / fine alert */
 
@@ -320,9 +335,9 @@ footer{
     color: gray;
 }
 #song-cover img{
-    cursor: poiner;
+    cursor: pointer;
     height: 60px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 #song-cover img:hover{
     height: 400px;
@@ -337,32 +352,50 @@ footer{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
+    height: 100%;
 }
 .player-icons{
-    align-self: stretch;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    height: 50px;
+    gap: 1%;
+    transition: 0.3s;
 }
 .song-range{
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: 20px; */
+    gap: 20px;
+    transition: 0.3s;
+}
+.icon-box{
+    height: 100%;
+    width: 40px;
+    position: relative;
 }
 .player-icons i{
     vertical-align: middle;
     font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.player-icons .fa-circle-play{
+    font-size: 2.5em;
+}
+.player-icons i:hover{
+    font-size: 1.9em;
+}
+.player-icons .fa-circle-play:hover{
+    font-size: 2.8em;
 }
 footer i:hover{
     cursor: pointer;
     color: yellowgreen;
-}
-.player .fa-circle-play{
-    font-size: 2.5em;
 }
 #song-bar{
    flex-grow: 1;
@@ -376,6 +409,7 @@ footer i:hover{
     align-items: center;
     flex-grow: 0;
     gap: 15px;
+    transition: 0.3s;
 }
 #volume-bar{
     width: 100%;

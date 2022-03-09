@@ -4,6 +4,9 @@
     .card{
         width: calc((100% / 4) - 20px);
     }
+    .song-range{
+        width: 80%;
+    }
 }
 
 /* S */
@@ -25,13 +28,16 @@
         gap: 2vw;
     }
     .player-icons{
-        gap: 2vw;
+        gap: 0;
     }
     .song-range{
         gap: 1vw;
     }
     .footer-controller{
         gap: 2vw;
+    }
+    .icon-box{
+        width: 30px;
     }
 }
 
@@ -101,8 +107,14 @@
     .player{
         width: calc(100% / 3);
     }
+    .player-icons{
+        height: 40px;
+    }
+    .icon-box{
+        width: 6vw;
+    }
     .song-range{
-        min-width: 60%;
+        width: 90%;
     }
     .footer-controller{
         width: calc(100% / 3);
