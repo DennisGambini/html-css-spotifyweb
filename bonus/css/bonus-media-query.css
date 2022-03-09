@@ -1,0 +1,146 @@
+/* M */
+
+@media screen and (max-width: 992px) {
+    .card{
+        width: calc((100% / 4) - 20px);
+    }
+    .song-range{
+        width: 80%;
+    }
+}
+
+/* S */
+
+@media screen and (max-width: 768px) {
+    /* due card per riga */
+    .card{
+        width: calc((100% / 2) - 20px);
+    }
+    /* nav con font e margini più piccoli */
+    footer{
+        gap: 1px;
+        font-size: 0.7em;
+    }
+    .like-icons i{
+        margin: 0;
+    }
+    .footer-cover{
+        gap: 2vw;
+    }
+    .player-icons{
+        gap: 0;
+    }
+    .song-range{
+        gap: 1vw;
+    }
+    .footer-controller{
+        gap: 2vw;
+    }
+    .icon-box{
+        width: 30px;
+    }
+}
+
+/* XS */
+
+@media screen and (max-width: 576px) {
+
+    /* header changing */
+    header{
+        flex-basis: auto;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 100;
+    }
+    header span, .playlist, .create-playlist, header hr, #logo{
+        display: none;
+    }
+    .logo{
+        height: auto;
+    }
+    #logo-small{
+        display: block;
+        height: 30px;
+        margin-top: 10px;
+    }
+    header ul li{
+        padding: 0 2px;
+    }
+    header ul li:hover{
+        padding: 0;
+    }
+    .header-nav{
+        flex-grow: 1;
+    }
+    .header-bottom {
+        padding: 0;
+    }
+    .install{
+        text-align: center;
+    }
+    .install>svg{
+        margin-right: 2px;
+    }
+    .profile{
+        text-align: center;
+    }
+    .profile-logo{
+        margin-left: 10px;
+    }
+
+    /* main changing */
+    .top-alert{
+        width: 100%;
+    }
+
+    /* footer changing */
+    footer{
+        z-index: 200;
+    }
+    .footer-cover{
+        width: calc(100% / 3);
+        margin-left: 4px;
+    }
+    #song-cover img{
+        height: 40px;
+    }
+    .player{
+        width: calc(100% / 3);
+    }
+    .player-icons{
+        height: 40px;
+    }
+    .icon-box{
+        width: 6vw;
+    }
+    .song-range{
+        width: 90%;
+    }
+    .footer-controller{
+        width: calc(100% / 3);
+        margin-right: 4px;
+    }
+}
+
+/* XXS */
+@media screen and (max-width: 380px) {
+    /* una sola card per riga */
+    .card{
+        width: calc(100% - 20px);
+    }
+
+    /* footer migliorato */
+    footer{
+        min-width: 300px;
+    }
+    .top-alert>button>a{
+        font-size: 0.85em;
+        padding: 10px;
+    }
+    .footer-controller{
+        display: none;
+    }
+    .footer-cover{
+        margin-left: 20px;
+    }   
+}
