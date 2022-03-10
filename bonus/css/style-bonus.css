@@ -357,7 +357,8 @@ footer{
     transition: 0.3s;
 }
 #song-cover img:hover{
-    height: 400px;
+    height: 70px;
+    border-radius: 20px;
 }
 #song-cover-text{
     cursor:pointer;
@@ -477,7 +478,7 @@ footer i:hover{
         bottom: 16px;
         right: 10px;
         opacity: 0;
-        transition: 0.2s;
+        transition: 0.35s;
         font-size: 1.4em;
         color: black;
     }
@@ -518,7 +519,6 @@ footer i:hover{
     width: 40px;
     border-radius: 50%;
     background-color: #1FDF64;
-    position: relative;
 }
 .colonne-square{
     height: 24px;
@@ -535,7 +535,7 @@ footer i:hover{
     width: calc((100% - 6px) / 4);
     background-color: black;
 }
-.colonne-box:hover .colonna1{
+/* .colonne-box:hover .colonna1{
     animation: colonna1 0.5s linear infinite alternate;
     animation-fill-mode: both;
 }
@@ -550,9 +550,11 @@ footer i:hover{
 .colonne-box:hover .colonna4{
     animation: colonna4 0.4s linear infinite alternate;
     animation-fill-mode: both;
-}
+} */
 .colonna1{
     height: 100%;
+    animation: colonna1 0.5s linear infinite alternate;
+    animation-fill-mode: both;
 }
 @keyframes colonna1 {
     from{
@@ -564,6 +566,8 @@ footer i:hover{
 }
 .colonna2{
     height: 40%;
+    animation: colonna2 0.7s linear infinite alternate;
+    animation-fill-mode: both;
 }
 @keyframes colonna2 {
     from{
@@ -575,6 +579,8 @@ footer i:hover{
 }
 .colonna3{
     height: 60%;
+    animation: colonna3 0.5s linear infinite alternate;
+    animation-fill-mode: both;
 }
 @keyframes colonna3 {
     from{
@@ -586,6 +592,8 @@ footer i:hover{
 }
 .colonna4{
     height: 20%;
+    animation: colonna4 0.4s linear infinite alternate;
+    animation-fill-mode: both;
 }
 @keyframes colonna4 {
     from{
@@ -595,3 +603,54 @@ footer i:hover{
         height: 100%;
     }
 }
+
+/* posizionamento eq */
+.colonne-box{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    display: none;
+}
+.new-play-icon:hover ~ .colonne-box{
+    display: block;
+}
+.colonne-box:hover{
+    display: block;
+}
+.card:active .colonne-box{
+    display: block;
+}
+.section-three .colonne-box{
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* posizionamento eq */
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #141922;
+}
+main::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#141922, #BBB, #141922);
+    border-radius: 20px;
+    height: 50px;
+}
+main::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(#141922, #DDD, #141922);
+}
+main::-webkit-scrollbar-button{
+    background-color: #141922;
+}
+
+
+/* idee per prossima pagina */
+.boh{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+
+
