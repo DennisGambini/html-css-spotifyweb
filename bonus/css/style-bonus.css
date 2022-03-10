@@ -261,23 +261,6 @@ main h3{
     text-align: center;
     width: calc((100% / 6) - 20px);
 }
-/* prove */
-/* .card{
-    padding: 0.5vw;
-    background-color: rgba(30, 35, 44
-    , 1);
-    border-radius: 6px;
-}
-.card-img{
-    background-color: red;
-    border-radius: 6px;
-    overflow: hidden;
-}
-.card:hover{
-    background-color: rgba(50, 55, 64
-    , 1);
-} */
-/* prove */
 .card-img{
     position: relative;
     cursor: pointer;
@@ -642,14 +625,6 @@ main::-webkit-scrollbar-thumb:hover {
 }
 main::-webkit-scrollbar-button{
     background-color: #141922;
-}
-
-
-/* idee per prossima pagina */
-.boh{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-all;
 }
 
 
