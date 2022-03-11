@@ -1,0 +1,41 @@
+/* M */
+
+@media screen and (max-width: 992px) {
+    .section-one ol{
+        padding-left: 0px;
+        margin-left: -17px;
+    }
+    .song-lenght{
+        column-gap: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* S */
+
+@media screen and (max-width: 768px) {
+    .song-fans{
+        display: none;
+    }
+    .section-one li{
+        column-gap: 15px;
+    }
+    .main-content{
+        padding: 20px;
+    }
+}
+
+/* XS */
+
+@media screen and (max-width: 576px) {
+    main{
+        font-size: 0.8em;
+    }
+}
+
+/* XXS */
+@media screen and (max-width: 380px) {
+    .song-lenght{
+        display: none;
+    }
+}

@@ -3,9 +3,13 @@
 @media screen and (max-width: 992px) {
     .card{
         width: calc((100% / 4) - 20px);
+        /* margin-bottom: 20px; */
     }
     .song-range{
         width: 80%;
+    }
+    .card-wrapper{
+        row-gap: 20px;
     }
 }
 
@@ -38,6 +42,10 @@
     }
     .icon-box{
         width: 30px;
+    }
+    /* margini tra le card migliorati */
+    .card-wrapper{
+        row-gap: 35px;
     }
 }
 

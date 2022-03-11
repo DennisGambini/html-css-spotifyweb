@@ -314,20 +314,6 @@ footer i:hover{
 
     /* BONUSSSSSSSSSSSSSSS */
 
-            /* icone play nelle card */
-    /* .new-play-icon{
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
-        background-color: #1FDF64;
-        position: absolute;
-        bottom: 16px;
-        right: 10px;
-        opacity: 0;
-        transition: 0.35s;
-        font-size: 1.4em;
-        color: black;
-    } */
     .section-three .new-play-icon{
         left: 50%;
         transform: translateX(-50%);
